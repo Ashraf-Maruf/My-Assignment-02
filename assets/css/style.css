@@ -1,4 +1,13 @@
+
+/*Google Fonts Start*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/*Google Fonts End*/
+
+
+/* ==== common css start =====
+==============================*/
 
 body{
     margin: 0;
@@ -14,6 +23,13 @@ body{
 .padding-section{
     margin-top: 120px;
 }
+
+
+/* ==== common css End =====
+==============================*/
+
+
+/*==== Start Banner Area ====*/
 
 .banner-area {
     background-color: #161616;
@@ -62,15 +78,41 @@ body{
     font-size: 20px;
 }
 
+.left-title-center a:hover .fa-chevron-right{
+    animation: icon 1.5s;
+    position: relative;
+    left: 10px;
+}
+
+@keyframes icon{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+    }
+    50%{
+        left: 5px;
+    }
+    75%{
+        transform: rotate(360deg);
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+
 .title-img-area .right-img img {
     width: 581px;
     height: 613px;
     margin-top: 33px;
 }
 
+/*==== Banner Area End ===*/
 
 
 
+/*===== Start Blog Area ====*/
 
 .blog-two-item {
     display: flex;
@@ -162,17 +204,73 @@ body{
     margin-right: 24px;
 }
 
+.blog-all-button{
+    display: none;
+}
+/*===== Blog Area End ====*/
 
+
+
+/*===== Start Match Area ====*/
+
+.match-area {
+    border: 1px solid;
+    width: 312px;
+    height: 242px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.match-flag {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 51px 20px 0px 20px;
+}
+
+.match-flag img{
+    width: 93px;
+    height: 56px;
+}
+.flag-text {
+    margin: 0px 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.match-text {
+    padding: 0px 20px 51px 20px;
+}
+
+.match-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.match-time{
+    margin: 0;
+}
+
+/*===== Match Area End ====*/
+
+
+
+/*===== Start Footer Area ====*/
 
 .footer-area{
     background-color: #161616;
-    height: 444px;
+    height: auto;
     width: 100%;
 }
 
 .footer-center-area{
    text-align: center;
-    padding: 134px 0px;
+    padding: 110px 0px;
 }
 .footer-top-text {
     font-size: 40px;
@@ -197,3 +295,30 @@ body{
     color: #B9B9B9;
     padding: 0px 20px;
 }
+
+.social-icon {
+    margin-top: 40px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: #DD0000;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 55px;
+    margin: 0px 10px;
+}
+.social-icon a:hover .social-icon-1{
+    transform: rotate(360deg);
+    transition: 0.8s ease-in-out;
+
+}
+.social-icon-1{
+    color: white;
+    font-size: 20px;
+}
+
+/*===== Footer Area End ====*/

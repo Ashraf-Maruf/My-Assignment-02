@@ -1,0 +1,194 @@
+
+
+
+
+/*Tablet devices*/
+
+@media (max-width: 768px){
+
+    /*=== Common Css Start ===*/
+    .container{
+        width: 90%;
+    }
+    .padding-section{
+        margin-top: 60px;
+    }
+    /*=== Common Css End ===*/
+
+    /*==== Banner Area Css Start ====*/
+    .banner-area {
+        height: 633px;
+        overflow: hidden;
+    }
+    .title-img-area .right-img img {
+        width: 323px;
+        height: 340px;
+        margin-top: 295px;
+    }
+    .left-title-center {
+        width: 316px;
+        height: 492px;
+        padding: 65px 10px 76px 20px;
+    }
+    .left-text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    /*==== Banner Area Css End ====*/
+
+    /*==== Blog Area Css Start ====*/
+
+    .blog-two-item {
+        flex-wrap: wrap;
+    }
+    .transfer-live-area {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .transfer-hide{
+        display: none;
+    }
+    .button-area {
+        background-color: transparent;
+        margin: 0;
+        width: 100%;
+        height: 125px;
+        display: flex;
+        align-items: center;
+    }
+    .button-1 {
+        border: 1px solid #B9B9B9;
+        background: transparent;
+        color: #161616;
+        padding: 16px 18px;
+        width: 174px;
+        margin: 0;
+        margin-right: 28px;
+    }
+
+    .button-area a:last-child{
+        margin-right: 0;
+    }
+
+    .button-1.active{
+        border: transparent;
+    }
+
+    .transfer-live-item,
+    .transfer-live-item img{
+        width: 100%;
+    }
+
+    .blog-all-button {
+        text-align: center;
+        margin-top: 50px;
+        display: block;
+    }
+    .all-blog{
+        background-color: #DD0000;
+        color: white;
+        border-radius: 5px;
+        border: transparent;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 15px;
+    }
+
+    /*==== Blog Area Css End ====*/
+
+    /*==== Match Area Css Start ====*/
+
+    .match-area{
+        width: 331px;
+    }
+
+    /*==== Match Area Css End ====*/
+
+
+    /*==== Footer Area Css Start ====*/
+
+    .footer-area {
+        height: 848px;
+    }
+    .footer-center-area {
+        padding: 60px 0px;
+    }
+    .footer-menu-item a {
+        margin: 15px 0px;
+        display: inline-block;
+    }
+
+    /*==== Footer Area Css End ====*/
+}
+
+/*Phone devices */
+@media (min-width: 320px) and (max-width: 767px){
+
+    /*=== Common Css Start ===*/
+    .container{
+        width: 85%;
+    }
+    /*=== Common Css Start ===*/
+
+    /*==== Banner Area Css Start ====*/
+
+    .banner-area {
+        height: auto;
+        overflow: hidden;
+    }
+    .title-img-area {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-title-center {
+        width: 316px;
+        height: 492px;
+        padding: 45px 10px 45px 0px;
+    }
+    .title-img-area .right-img img {
+        width: 223px;
+        height: 245px;
+        position: relative;
+        top: 8px;
+        margin: 0;
+    }
+
+    /*==== Banner Area Css End ====*/
+
+    /*==== Blog Area Css Start ====*/
+
+    .transfer-live-area {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 265px;
+    }
+    .button-1 {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
+
+    /*==== Blog Area Css End ====*/
+
+    /*==== Match Area Css Start ====*/
+
+    .match-area {
+        width: 318px;
+    }
+
+    /*==== Match Area Css End ====*/
+
+    /*==== Footer Area Css Start ====*/
+
+    .footer-area {
+        height: auto;
+    }
+    .footer-menu-item a {
+        display: block;
+    }
+
+    /*==== Footer Area Css End ====*/
+}
